@@ -1,3 +1,3 @@
-# mechine_learning
+# audio_recognizer
 
-mechine learning via voice commands.
+audio recognizer
