@@ -111,22 +111,7 @@ def run_via():
             elif 'joke' in command:
                 talk(pyjokes.get_joke())
             else:
-                print("proccess to AI answer ...")
-                r = requests.get("https://beta.beapi.me/simisimi?lang=en&text={}".format(command))
-                res = json.loads(r.text)
-                respon = res["result"]
-                if "simi-simi" in respon.lower() or "simi" in respon.lower() or "simi simi" in respon.lower():
-                    try:
-                        respon = command.replace('simi-simi', 'via')
-                    except:
-                        try:
-                            respon = command.replace('simi', 'via')
-                        except:
-                            try:
-                                respon = command.replace('simi simi', 'via')
-                            except:
-                                pass
-                talk(respon)
+                talk("i don't understand")
 
 
 while True:
